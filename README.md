@@ -98,7 +98,8 @@ Partie cours: du 18/09 au 01/10.
          Effets au survol + bordure nav bottom (grise puis bleue au survol).
 	 
 28/10/20 Commencement de la partie responsive mobile. 
-
+	Insertion icone loupe dans barre de recherche.
+	
         
         
         
