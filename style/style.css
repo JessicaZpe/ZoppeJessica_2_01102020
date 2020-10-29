@@ -80,6 +80,7 @@ header li
 }
 
 /*--*****************@media queries HEADER******************/
+
 /*--*****Resolution-Tab*****--*/
 @media screen and (max-width: 1024px)
 {
@@ -110,7 +111,7 @@ header li
 		grid-column-end: 3;
     	border: none;
     	margin-top: 50px;
-    	margin-left: 30px;
+    	margin-left: 60%;
 	}
 
 		header ul
@@ -124,8 +125,9 @@ header li
 		grid-column-end: 3;
 		display: flex;
 		justify-content: space-between;
-		margin-top: 55%;
+		margin-top: 35%;
 		margin-bottom: 0;
+        margin-left: 50%;
 	}
 
 	.menu
@@ -153,13 +155,86 @@ header li
 	}
 }
 
+
 /*--*****Resolution-Mobile*****--*/
 @media screen and (max-width: 720px)
+{
+    header
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 20px;
+    }
+
+    #logo
+    {
+        display: grid;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .signup 
+    {
+        display: grid;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border: none;
+        margin-top: 50px;
+        margin-left: 180px;
+    }
+
+        header ul
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 55%;
+        margin-bottom: 0;
+        margin-left: 40%;
+    }
+
+    .menu
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+    }
+
+    .navigation
+    {
+        border-bottom: solid medium #F2F2F2;
+
+    }
+
+    .navigation a:hover 
+    {
+        border-bottom: solid medium #0065FC;
+        border-top: none;
+    }
+}
 
 /*--*****************FIN DU @media*****************--*/
 
 /*------------------------------------------------------------------------------*/
+
 /*SECTION 1: Recherche + Filtres*/
+
 /*----------------------*/
 	/*Titre*/
 
@@ -192,10 +267,11 @@ header li
 }
 /*----------------------*/
 	/*Barre de recherche*/
+
 #searchbar
 {
-    height: 50px;
     display: flex;
+    height: 50px;
     margin-top: 0;
     margin-bottom: 30px;
 }
@@ -215,19 +291,32 @@ input
 {
     width: 230px;
     border: solid 1px #F2F2F2;
-    padding: 16px;
     font-weight: bold;
+    padding: 16px;
 }
+
 button 
 {
     width: 130px;
-    background-color: #0065FC;
-    color: white;
     border-radius: 0px 15px 15px 0px;
     border: none;
-    font-weight: bold;
+    background-color: #0065FC;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
 }
+
+.searchbutton strong:hover
+{
+    color: white;
+    font-weight: bold;
+}
+
+.fa-search /*loupe*/
+{
+    display: none;
+}
+
 /*----------------------*/
 	/*Filtres*/
 .filtersearch 
@@ -294,6 +383,7 @@ button
 
 /*----------------------*/
 	/*Info*/
+
 .info 
 {
     display: flex;
@@ -327,34 +417,145 @@ button
 	/*----------------------------------*/
 
 /*--*****************@media queries RECHERCHE + FILTRES*****************--*/
+
+/*--*****Resolution-Tab*****--*/
 @media screen and (max-width: 1024px)
 {
+    /*Titre*/
+    .searchtitle h1, p
+    {
+        margin-left: 20px;
+    }
 
+    /*BARRE DE RECHERCHE*/
 	.searchsection 
 	{
-   	 	padding: 20px
+   	 	margin-left: 20px;
 	}
 
+    #searchbar
+    {
+        margin-left: 20px;
+    }
 
+    button 
+    {
+        width: 65px;
+        border-radius: 20px;
+        margin-left: -15px;
+    }
+
+    button .fa-search /*loupe*/
+    {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 18px;
+        font-size: 1.2em;
+        color: white;
+    }
+
+    .searchbutton strong
+    {
+        display: none;
+    }
+
+    /*FILTRES*/
 	.filtersearch 
 	{
     	display: flex;
     	flex-direction: column;
-    	align-items: flex-start
+    	align-items: flex-start;
 	}
+
+    .filtersearch h3
+    {
+        margin-left: 20px;
+    }
 
 	#filter 
 	{
     	display: flex;
     	flex-wrap: wrap;
     	align-content: space-between;
+        margin-left: 7px;
 	}
 
 	.filterbutton 
 	{
     	margin: 10px;
 	}
+
+    .info
+    {
+        margin-left: 20px;
+    }
 }
+
+
+/*--*****Resolution-Mobile*****--*/
+@media screen and (max-width: 720px)
+{
+    /*Titre*/
+    .searchtitle h1, p
+    {
+        margin-left: 20px;
+    }
+
+    /*BARRE DE RECHERCHE*/
+    .searchsection 
+    {
+        padding: 20px
+    }
+
+    #searchbar
+    {
+        margin-left: 20px;
+    }
+
+    button .fa-search /*loupe*/
+    {
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 18px;
+        font-size: 1.2em;
+    }
+
+    button 
+    {
+        width: 65px;
+        border-radius: 20px;
+        margin-left: -15px;
+    }
+
+    .searchbutton strong
+    {
+        display: none;
+    }
+
+    /*FILTRES*/
+    .filtersearch 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    #filter 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    .filterbutton 
+    {
+        margin: 10px;
+    }
+}
+
 /*--*****************FIN DU @media*****************--*/
 
 /*------------------------------------------------------------------------------*/
@@ -368,7 +569,7 @@ button
     width: 95%;
     min-height: 650px;
 }
-
+ /*Général*/
 strong
 {
 	font-weight: bold;
@@ -559,6 +760,8 @@ strong
 }
 
 /*--*****************@media queries Hébergements + Plus Populaires*****************--*/
+
+/*--*****Resolution-Tab*****--*/
 @media screen and (max-width: 1024px)
 {	/*BIG BLOC Hebg. et +Pop.*/
 	.hosting 
@@ -566,6 +769,7 @@ strong
 		display: flex;
     	flex-direction: column-reverse;
     	justify-content: space-around;
+        margin-left: 20px;
 	}
 
 	/*Plus populaires*/
@@ -573,10 +777,11 @@ strong
 	{
     	display: flex;
     	flex-direction: column;
-    	width: 95%;
+    	width: 80%;
     	min-height: 560px;
     	padding: 20px;
     	margin: 0 auto;
+        border-radius: 0;
 	}	
 
 	#mostpopular h2 
@@ -586,7 +791,13 @@ strong
     	justify-content: space-around;
     	align-items: flex-start;
     	margin-bottom: 30px;
+        margin-left: -40%;
 	}
+
+    #mostpopular .stars
+    {
+        margin-left: 20px;
+    }
 
 	.pop_accomodation 
 	{
@@ -594,7 +805,7 @@ strong
     	grid-template-columns: 1fr;
     	grid-template-rows: 1fr 1fr 1fr;
    	 	grid-row-gap: 10px;
-    	height: 525px;
+    	height: 500px;
 	}
 
 	/*Hebergements*/
@@ -602,11 +813,12 @@ strong
 	{
 		display: grid;
   		grid-template-rows: 5% 80% 5%;
-  		grid-row-gap: 2px;
-  		background-color: white;
-    	width: 95%;
+  		grid-row-gap: 10px;
+        background-color: white;
+    	width: 70%;
    	 	min-height: 1400px;
    	 	padding: 25px;
+        margin-left: 95px;
 	}
 
 	.accomodation h2 
@@ -621,12 +833,11 @@ strong
     	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
 
-	.findings 
+	.findings /*Figure*/
 	{
-    	height: 220px;
+    	height: 350px;
     	box-shadow: 5px 5px 5px #F2F2F2;
     	border-radius: 20px 20px 20px 20px;
-    	border-color: #F2F2F2;
     }
 
 	.accomodation h3
@@ -634,6 +845,86 @@ strong
 		margin: 0 20px;
 	}
 }
+
+/*--*****Resolution-Mobile*****--*/
+@media screen and (max-width: 720px)
+{
+    /*BIG BLOC Hebg. et +Pop.*/
+    .hosting 
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    /*Plus populaires*/
+    #mostpopular 
+    {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        width: 95%;
+        min-height: 560px;
+        padding: 20px;
+        margin: 0 auto;
+    }   
+
+    #mostpopular h2 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        padding-left: 110px;
+    }
+
+    .pop_accomodation 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        height: 500px;
+    }
+        /*Hebergements*/
+    .accomodation 
+    {
+        display: grid;
+        grid-template-rows: 5% 80% 5%;
+        grid-row-gap: 2px;
+        background-color: white;
+        width: 92%;
+        min-height: 1400px;
+        padding: 25px;
+        margin-left: 5px;
+    }
+
+    .accomodation h2 
+    {
+        margin: 20px;
+    }
+
+    .accomodationmarseille
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .findings /*Figure*/
+    {
+        height: 220px;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .accomodation h3
+    {
+        margin: 0 20px;
+    }
+}
+
 /*--*****************FIN DU @media*****************--*/
 
 /*------------------------------------------------------------------------------*/
@@ -679,6 +970,7 @@ strong
 
 .activity_pic img 
 {
+    display: grid;
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 3;
@@ -691,23 +983,23 @@ strong
 
 .activity_pic figure 
 {
+    display: grid;
+    grid-template-rows: 1fr 50px;
     width: 100%;
     height: 100%;
     margin: 0;
-    display: grid;
-    grid-template-rows: 1fr 50px;
 }
 
 .activity_pic figcaption 
 {
+    display: grid;
     grid-column-start: 1;
     grid-row-start: 2;
     grid-row-end: 3;
-    z-index: 1;
     display: flex;
     align-items: center;
-    border-radius: 0 0 20px 20px;
     background-color: white;
+    border-radius: 0 0 20px 20px;
     padding: 10px;
 }
 
@@ -752,6 +1044,8 @@ strong
 }
 
 /*--*****************@media queries ACTIVITY*****************--*/
+
+/*--*****Resolution-Tab*****--*/
 @media screen and (max-width: 1024px)
 {
 	.activity 
@@ -761,6 +1055,7 @@ strong
     	width: 350%;
     	min-height: 1400px;
     	padding: 10px 20px;
+        margin-left: 85px;
  	}
 
 	.activity h2
@@ -774,19 +1069,58 @@ strong
     	display: grid;
     	grid-template-columns: 1fr;
     	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    	grid-row-gap: 2px;
+    	grid-row-gap: 3px;
     	height: auto;
 	}
 
 
 	.activity_pic figure 
 	{
-    	width: 100%;
+    	width: 90%;
     	height: 220px;
     	border-radius: 20px 20px 20px 20px;
     	box-shadow: 5px 5px 5px #F2F2F2;
 	}
 }
+
+/*--*****Resolution-Mobile*****--*/
+@media screen and (max-width: 720px)
+{
+    .activity 
+    {
+        display: flex;
+        flex-direction: column;
+        width: 350%;
+        min-height: 140px;
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+
+    .activity h2
+    {
+        padding-top: 15px;
+        margin: 20px;
+    }
+
+    .activity_result 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 3px;
+        height: auto;
+    }
+
+
+    .activity_pic figure 
+    {
+        width: 100%;
+        height: 220px;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 5px 5px 5px #F2F2F2;
+    }
+}
+
 /*--*****************FIN DU @media*****************--*/
 
 /*------------------------------------------------------------------------------*/
@@ -832,14 +1166,30 @@ footer li
     list-style-type: none
 }
 /*--*****************@media queries FOOTER*****************--*/
+
+/*--*****Resolution-Tab*****--*/
 @media screen and (max-width: 1024px)
 {
 	footer
 	{
 		display: flex;
     	flex-direction: column;
+        align-items: center;
    		width: 100%;
     	height: 100%;
 	}
+}
+
+/*--*****Resolution-Mobile*****--*/
+@media screen and (max-width: 720px)
+{
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
 }
 /*--*****************FIN DU @media*****************--*/
