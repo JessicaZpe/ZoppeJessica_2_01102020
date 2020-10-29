@@ -100,6 +100,11 @@ Partie cours: du 18/09 au 01/10.
 28/10/20 Commencement de la partie responsive mobile. 
 	Insertion icone loupe dans barre de recherche.
 	
+29/10/20 Correction d'un bug lié à l'insertion de l'icone Loupe dans la barre de recherche. 
+	Partie responsive mobile OK
+	Refonte de la partie responsive tablette, changements marges.
+	Validator W3C: Sur la partie HTML= 2 Warning. CSS OK.
+	
         
         
         
