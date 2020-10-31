@@ -1052,7 +1052,6 @@ strong
 	{
     	display: flex;
     	flex-direction: column;
-    	width: 350%;
     	min-height: 1400px;
     	padding: 10px 20px;
         margin-left: 85px;
@@ -1090,7 +1089,6 @@ strong
     {
         display: flex;
         flex-direction: column;
-        width: 350%;
         min-height: 140px;
         padding: 10px 20px;
         margin-left: 20px;
