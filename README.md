@@ -105,7 +105,22 @@ Partie cours: du 18/09 au 01/10.
 	Refonte de la partie responsive tablette, changements marges.
 	Validator W3C: Sur la partie HTML= 2 Warning. CSS OK.
 	
-        
+30/10/20  Vu avec mentor: éviter le plus possible les tailles en %. 
+	Plusieurs problèmes visibles en responsive: 
+	- Scroll horizontal de ma nav 
+	- Espacement à droite en version mobile
+	- Scroll vertical vignettes (plus pop)
+	- Marges des vignettes (plus pop) en mobile
+	- Marge h2 (plus pop) en tab
+	Plusieurs essais non concluants pour l'instant. 
+		
+01/11/20 Corrections d'une partie.
+	Corrections gros espacement droite version mobile (lié à ma partie Activités)
+
+02/11/20 Problème leger espace à droite en version tab: corrigé (width footer).
+
+03/11/20 Nouveau commit et envoi par mail au mentor.
+	
         
         
         
