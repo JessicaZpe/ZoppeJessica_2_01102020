@@ -118,8 +118,9 @@ Partie cours: du 18/09 au 01/10.
 	Corrections gros espacement droite version mobile (lié à ma partie Activités)
 
 02/11/20 Problème leger espace à droite en version tab: corrigé (width footer).
+	Nouveau commit
 
-03/11/20 Nouveau commit et envoi par mail au mentor.
+04/11/20 Nouveau commit et envoi par mail au mentor.
 	
         
         
